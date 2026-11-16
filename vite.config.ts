@@ -16,6 +16,10 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  // Lets the built site answer on whatever hostname it is hosted at.
+  preview: {
+    allowedHosts: true,
+  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
